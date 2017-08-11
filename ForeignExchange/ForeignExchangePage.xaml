@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:ForeignExchange" 
+    x:Class="ForeignExchange.ForeignExchangePage">
+ <StackLayout Padding= "20"> 
+	<Label 
+        HorizontalOptions="Center"
+        FontSize="Large"
+        Text="Welcome to Dsys Exchange"> 
+   </Label>
+        <Label 
+            Text="Pesos:" >
+        </Label>
+        <Entry 
+            x:Name="PesosEntry"
+            Keyboard="Numeric"
+            PlaceholderColor="Blue"
+            Placeholder="Enter an Amount in Pesos....">
+        </Entry>
+        <Button
+            x:Name="ConvertButton"
+            Text="Convert">
+        </Button>
+         <Label 
+            Text="Dollar:" >
+        </Label>
+        <Entry 
+            x:Name="DollarsEntry"
+            IsEnabled="false"
+            Placeholder="Value in Dollars....">
+        </Entry>
+         <Label 
+            Text="Euros:" >
+        </Label>
+        <Entry 
+            x:Name="EurosEntry"
+            IsEnabled="false"
+            Placeholder="Value in Euros....">
+        </Entry>
+         <Label 
+            Text="Pounds:" >
+        </Label>
+        <Entry 
+            x:Name="PoundsEntry"
+            IsEnabled="false"
+            Placeholder="Value in Pounds....">
+        </Entry>
+    </StackLayout> 
+</ContentPage>
